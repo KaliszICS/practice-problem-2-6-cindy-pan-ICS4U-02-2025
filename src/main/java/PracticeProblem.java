@@ -26,6 +26,8 @@ public class PracticeProblem {
 		
 		return h;
 	}
+
+	
 	public static int[] selectionSort(double[] nums){
 		int[] help={0,0};
 		int countcomp = 0;
@@ -35,8 +37,19 @@ public class PracticeProblem {
 			int min = i;
 			for (int j = i+1; j<nums.length; j++){
 				countcomp++;
-				if()
+				if(nums[j]<nums[min]){
+					min = j;
+			
+				}
 			}
+			if (min!=i){
+				double temp = nums[i];
+				nums[i]=nums[min];
+				nums[min]=temp;
+				countswap++;
+				help[0] = countswap;
+			}
+			help[1]=countcomp;
 		}
 
 		return help;
