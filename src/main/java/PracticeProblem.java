@@ -1,8 +1,6 @@
 public class PracticeProblem {
 
-	public static void main(String args[]) {
-		leastSwaps(new double[]{9, 7, 4, 2, 1, 0});
-	}
+
 	
 	public static int[] bubbleSort(double[] nums){
 		int[] h= {0,0};
